@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fontsource-variable/spline-sans-mono": "^5.2.6",
+    "@fontsource/courier-prime": "^5.2.6"
+  }
+}

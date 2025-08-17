@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boleta Digital</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="contenedor-todo">
+      <div class="contenedor-boleta">
+        <div class="contenedor-logo">
+          <img
+            src="./logo-andreita-confecciones.webp"
+            alt="Logo andreita confecciones"
+          />
+        </div>
+        <hr />
+        <div>
+          <h1>Detalle de Compra</h1>
+        </div>
+        <div class="informacion">
+          <p><b>Dirección:</b> Pasaje Lourdes 100</p>
+          <p><b>Comuna:</b> Peñaflor</p>
+          <p><b>Ciudad:</b> Santiago</p>
+          <p><b>Teléfono:</b> +569 6805 8495</p>
+          <p class="fecha"></p>
+          <p contenteditable="true"><b>Forma de pago:</b> xxx</p>
+        </div>
+        <hr />
+        <div class="informacion-cliente">
+          <p contenteditable="true"><b>Cliente:</b> xxx</p>
+          <p contenteditable="true"><b>Rut:</b> xxx</p>
+        </div>
+        <hr />
+        <div class="contenedor-titulo">
+          <h2>Detalle del pedido</h2>
+        </div>
+        <hr />
+        <div class="tabla-detalle">
+          <!-- Se renderiza el contenido desde js -->
+        </div>
+        <div class="contenedor-botones html2canvas-ignore">
+          <button id="boton-agregar">Agregar</button>
+          <button id="boton-limpiar">Limpiar</button>
+        </div>
+        <hr />
+        <div>
+          <p><b>Total:</b> <span class="total-general">$0</span></p>
+        </div>
+      </div>
+      <div>
+        <button id="boton-whatsapp">Exportar WA</button>
+        <button id="boton-imprimir">Imprimir</button>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="boleta.js"></script>
+  </body>
+</html>
